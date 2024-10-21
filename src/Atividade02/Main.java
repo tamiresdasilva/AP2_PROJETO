@@ -64,7 +64,7 @@ public class Main {
                         }
                         break;
                     case 4:
-                        Livro removidoFim = livros.removerUltimo(); //dando erro
+                        Livro removidoFim = livros.removerUltimo();
                         if (removidoFim != null) {
                             System.out.println("Livro removido: " + removidoFim);
                         } else {
