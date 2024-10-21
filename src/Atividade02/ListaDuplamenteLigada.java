@@ -3,7 +3,6 @@ package Atividade02;
 public class ListaDuplamenteLigada<T> {
     private No<T> inicio;
     private No<T> fim;
-    Livro livro;
     private int tamanho;
 
     public ListaDuplamenteLigada() {
@@ -67,36 +66,6 @@ public class ListaDuplamenteLigada<T> {
         }
         tamanho--;
         return dado;
-    }
-
-
-
-    public boolean removerPorValor(T dado){
-        if (inicio == null) {
-            System.out.println("A lista está vazia!");
-            return false;
-        }
-
-        No<T> atual = inicio;
-        while (atual != null){
-            if (atual.dado.equals(dado)){
-                if (atual == inicio){
-                    inicio = atual.proximo;
-                    if (inicio != null) inicio.anterior = null;
-                }
-                else if (atual == fim){ //Se o número for o último
-                    fim = atual.anterior;
-                    if (fim != null) fim.proximo = null;
-                }else{
-                    atual.anterior.proximo = atual.proximo;
-                    atual.proximo.anterior = atual.anterior;
-                }
-                tamanho --;
-                return true;
-            }
-            atual = atual.proximo;
-        }
-        return false;
     }
 
     public T buscar(int id) {
