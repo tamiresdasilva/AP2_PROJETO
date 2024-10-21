@@ -76,7 +76,7 @@ public class Main {
                         int idBuscar = scan.nextInt();
                         Livro encontrado = livros.buscar(idBuscar);
                         if (encontrado != null){
-                            System.out.println("Livro encontrado: " + encontrado.toString()); //ta aparecendo msm dps de apagar
+                            System.out.println("Livro encontrado: " + encontrado.toString());
                         }else {
                             System.out.println("Livro não foi encontrado.");
                             continue;
