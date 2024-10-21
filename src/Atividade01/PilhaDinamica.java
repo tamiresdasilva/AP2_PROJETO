@@ -1,10 +1,9 @@
 package Atividade01;
 
 public class PilhaDinamica<T> {
-    No<T> topo; //Saber quem é o topo
-    int tamanho; //saber quantos elementos eu tenho
+    No<T> topo;
+    int tamanho;
 
-    //Inicializamos a nossa Pilha com o nosso constructor
     PilhaDinamica(){
         tamanho = 0;
         topo = null;
